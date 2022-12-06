@@ -1,0 +1,432 @@
+@import "./../assets/vars";
+@import "./../assets/keyframes";
+
+// BREAKPOINT LAPTOP
+@media (max-width: $ss_laptop) {
+	.container{
+		max-width: 880px;
+	}
+	.wrapper{
+		font-size: 16px;
+	}
+}
+
+// BREAKPOINT TABLET
+@media (max-width: $ss_tablet) {
+	.wrapper{
+		font-size: 15px;
+	}
+	.container{
+		padding: 0 15px;
+	}
+}
+
+// BREAKPOINT SM TABLET
+@media (max-width: $ss_sm_tablet) {
+	.wrapper{
+		font-size: 14px;
+	}
+}
+
+// BREAKPOINT PHONE
+@media (max-width: $ss_phone) {
+	.wrapper{
+		width: calc(100% + 30px);
+		margin: 0 -15px;
+	}
+}
+
+@media (max-width: 1339px){
+	.first-screen{
+		&__images{
+			width: 50%;
+			top: 3%;
+		}
+
+		&__elem{
+			&--watch{
+				top: 3%;
+    			right: 41%;
+			}
+
+			&--dotted-line {
+				left: 820px;
+				top: 252px;
+			}
+
+			&--redarrow {
+				left: 878px;
+				top: 240px;
+			}
+
+			&--rectangle-big {
+				left: 530px;
+				top: 600px;
+			}
+
+			&--rectangle-small {
+				left: 890px;
+				top: 470px;
+			}
+
+			&--circle {
+				left: 520px;
+			}
+		}
+	}
+	.career__card-title{
+		line-height: 1.55;
+	}
+
+	.good-cause__img::after{
+		top: 20%;
+	}
+
+}
+
+@media (max-width: 1019px){
+	.first-screen{
+
+		&__inner{
+			padding: 60px 0;
+		}
+		&__content{
+			width: 100%;
+			text-align: center;
+		}
+
+		&__content-btn {
+			margin: 0 auto;
+		}
+
+		&__images{
+			position: static;
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		&__elem{  
+			&--watch {
+				top: 650px;
+				right: 17%;
+			}
+
+			&--redarrow{
+				display: none;
+			}
+
+			&--dotted-line{
+				display: none;
+			}
+
+			&--rectangle-big{
+				left: 135px;
+    			top: 1050px;
+			}
+
+			&--rectangle-small{
+				left: 495px;
+    			top: 900px;
+			}
+			&--circle{
+				left: 140px;
+				top: 790px;
+			}
+		}
+	}
+	.about{
+		padding-top: 0px;
+		&__card{
+			width: 100%;
+		}
+	}
+	.mission{
+		padding: 80px 0;
+		&__text{
+			font-size: 44px;
+			line-height: 55px;
+		}
+	}
+	.values{
+		&__card{
+			width: 100%;
+		}
+
+		&__card-front,
+		&__card-back{
+		width: 100%;
+		}
+		&__card:nth-child(2){
+			margin-top: 20px;
+		}
+	}
+	.slogan__text{
+		font-size: 50px;
+		line-height: 70px;
+		padding: 120px 0;
+	}
+	.career{
+		&__card{
+			width: 100%;
+			height: 550px;
+			text-align: center;
+			justify-content: space-evenly;
+		}
+
+		&__card+&__card{
+			margin-top: 20px;
+		}
+
+		&__card-img{
+			width: 70%;
+			margin: 0 auto;
+		}
+	}
+	.heading--good-cause{
+		text-align: center;
+	}
+	.good-cause{
+		padding: 100px 0;
+		&__img{
+			width: 100%;
+			text-align: center;
+			order: 2;
+			background-image: url(../../images/heart-bg.png);
+			background-repeat: no-repeat;
+    		background-size: contain;
+			background-position: 100px 0;
+		}
+
+		&__img-heart{
+			position: static;
+		}
+
+		&__img::after{
+			display: none;
+		}
+
+		&__description{
+			width: 100%;
+			text-align: center;
+			order: 1;
+			padding-bottom: 40px;
+		}
+	}
+	.partners__slider-img{
+		width: 30%;
+		height: 120px;
+	}
+	.video{
+		padding: 80px 0;
+	}
+}
+
+@media (max-width: 699px){
+	.heading{
+		font-size: 34px;
+		line-height: 37px;
+		padding-bottom: 30px;
+	}
+	.first-screen{
+		&__content-title{
+			font-size: 50px;
+		}
+		&__content-text{
+			font-size: 18px;
+		}
+		&__content-btn {
+			font-size: 17px;
+		}
+		&__images{
+			width: 70%;
+		}
+		&__elem{  
+			&--watch {
+				top: 550px;
+				right: 17%;
+			}
+			&--rectangle-big{
+				display: none;
+			}
+
+			&--rectangle-small{
+				display: none;
+			}
+			&--circle{
+				display: none;
+			}
+		}
+	}
+	.about{
+		&__card{
+			height: 180px;
+			&--third{
+				padding-top: 30px;
+			}
+		}
+		&__card-number{
+			font-size: 50px;
+		}
+	}
+	.mission{
+		&__text{
+			font-size: 38px;
+			line-height: 45px;
+		}
+	}
+	.values{
+		&__card{
+			height: 280px;
+		}
+	
+		&__card-front,
+		&__card-back{
+			height: 280px;
+		}
+	
+		&__card-front-icon{
+			margin-top: 58px;
+		}
+	
+		&__card-front-title{
+			margin-top: 10px;
+			font-size: 35px;
+		}
+	
+		&__card-back-title{
+			font-size: 35px;
+			margin-top: 70px;
+		}
+	}
+	.slogan__text{
+		font-size: 40px;
+		line-height: 60px;
+	}
+	.career{
+		&__text{
+			margin-bottom: 50px;
+		}
+	}
+}
+
+@media (max-width: 625px){
+	.first-screen{
+		&__images{
+			width: 65%;
+		}
+		&__elem{  
+			&--watch {
+				display: none;
+			}
+		}
+	}
+	.values{
+		&__card{
+			perspective: 800px;
+			height: 220px;
+		}
+		&__card-front,
+		&__card-back{
+			height: 220px;
+		}
+		&__card-front-icon{
+			margin-top: 38px;
+		}
+		&__card-back-title{
+			margin-top: 60px;
+		}
+	}
+	.good-cause{
+		&__img{
+			background-position: 0 0;
+			text-align: left;
+		}
+	}
+}
+
+@media (max-width: 399px){
+	.logo{
+		width: 35%;
+	}
+	.header__link{
+		font-size: 14px;
+	}
+	.heading{
+		font-size: 25px;
+		line-height: 30px;
+		padding-bottom: 20px;
+	}
+	.first-screen{
+		padding-bottom: 50px;
+		&__inner{
+			padding: 35px 0;
+		}
+		&__content-title{
+			font-size: 38px;
+			line-height: 45px;
+		}
+		&__content-text{
+			font-size: 16px;
+		}
+		&__content-btn {
+			font-size: 15px;
+			width: 220px;
+			padding: 12px 25px;
+		}
+	}
+	.about{
+		&__card{
+			height: 150px;
+		}
+		&__card-number{
+			font-size: 35px;
+			margin-top: 30px;
+			&--third{
+				margin-top: 0;
+			}
+		}
+	}
+	.values{
+		&__card{
+			height: 180px;
+		}
+		&__card-front,
+		&__card-back{
+			height: 180px;
+		}
+		&__card-front-icon{
+			width: 15%;
+		}
+		&__card-front-title{
+			font-size: 25px;
+		}
+		&__card-back-title{
+			font-size: 25px;
+		}
+		&__card-back-text{
+			font-size: 14px;
+		}
+	}
+	.slogan__text{
+		font-size: 25px;
+		line-height: 40px;
+	}
+	.career{
+		&__card-title{
+			font-size: 22px;
+		}
+	}
+	.good-cause{
+		padding: 60px 0;
+		&__img{
+			width: 80%;
+		}
+	}
+	.partners__slider-img{
+		width: 30%;
+		height: 80px;
+	}
+	.video{
+		padding: 60px 0;
+	}
+}
